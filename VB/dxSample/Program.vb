@@ -3,7 +3,7 @@ Imports System
 Imports System.Collections.Generic
 Imports System.Windows.Forms
 
-Namespace dxSample
+Namespace DXSample
 	Friend NotInheritable Class Program
 		''' <summary>
 		''' The main entry point for the application.
