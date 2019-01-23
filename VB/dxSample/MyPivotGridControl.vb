@@ -1,11 +1,10 @@
-Imports Microsoft.VisualBasic
-Imports System
-Imports DevExpress.XtraPivotGrid
+﻿Imports DevExpress.XtraPivotGrid
 Imports DevExpress.XtraPivotGrid.Data
 
-Namespace DXSample
+Namespace dxSample
 	Public Class MyPivotGridControl
 		Inherits PivotGridControl
+
 		Public Sub New()
 			MyBase.New()
 		End Sub

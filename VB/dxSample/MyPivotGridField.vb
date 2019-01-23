@@ -1,12 +1,11 @@
-Imports Microsoft.VisualBasic
-Imports System
-Imports DevExpress.XtraPivotGrid
+﻿Imports DevExpress.XtraPivotGrid
 Imports DevExpress.XtraPivotGrid.Data
 Imports DevExpress.XtraPivotGrid.ViewInfo
 
-Namespace DXSample
+Namespace dxSample
 	Public Class MyPivotGridField
 		Inherits PivotGridField
+
 		Public Sub New(ByVal fieldName As String, ByVal area As PivotArea)
 			MyBase.New(fieldName, area)
 		End Sub
@@ -18,7 +17,7 @@ Namespace DXSample
 		End Sub
 		Public Overrides ReadOnly Property CanFilter() As Boolean
 			Get
-				If Data Is Nothing OrElse (Not Visible) Then
+				If Data Is Nothing OrElse Not Visible Then
 					Return False
 				End If
 				If Area = PivotArea.DataArea Then
@@ -31,6 +30,7 @@ Namespace DXSample
 
 	Public Class MyPivotGridFieldCollection
 		Inherits PivotGridFieldCollection
+
 		Public Sub New(ByVal data As PivotGridData)
 			MyBase.New(data)
 		End Sub
@@ -41,6 +41,7 @@ Namespace DXSample
 
 	Public Class MyPivotGridViewInfoData
 		Inherits PivotGridViewInfoData
+
 		Public Sub New(ByVal control As IViewInfoControl)
 			MyBase.New(control)
 		End Sub
